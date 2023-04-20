@@ -30,3 +30,4 @@ def conversao (valoratual, unid_atual, unid_final):
         if unid_atual == 'bit':
             valor_final = (valor_final/1024)*8
     print(valor_final)
+    conversao(valoratual, unid_atual, unid_final)
