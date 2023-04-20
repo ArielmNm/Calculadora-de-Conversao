@@ -5,72 +5,84 @@ funcEscolha = input()
 
 if(funcEscolha == '1'):
     print("You chose the option 1")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = bitParaByte(teclvalorAserconvertido)
     print(valorconvertido) 
 
 elif(funcEscolha == '2'):
     print("You chose the option 2")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = byteParaBit(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '3'):
     print("You chose the option 3")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = byteParaKilobyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '4'):
     print("You chose the option 4")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = KilobyteParabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '5'):
     print("You chose the option 5")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = KilobyteParaMegabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '6'):
     print("You chose the option 6")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = MegabyteParaKilobyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '7'):
     print("You chose the option 7")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = MegabyteParaGigabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '8'):
     print("You chose the option 8")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = GigabyteParaMegabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '9'):
     print("You chose the option 9")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = GigabyteParaTerabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '10'):
     print("You chose the option 10")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = TerabyteParaGigabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '11'):
     print("You chose the option 11")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = TerabyteParaPetabyte(teclvalorAserconvertido)
     print(valorconvertido)
 
 elif(funcEscolha == '12'):
     print("You chose the option 12")
+    print("insira o valor:")
     teclvalorAserconvertido = converterStringParaFloat(input())
     valorconvertido = PetabyteParaTerabyte(teclvalorAserconvertido)
     print(valorconvertido)
