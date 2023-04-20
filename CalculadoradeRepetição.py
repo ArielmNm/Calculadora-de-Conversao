@@ -1,27 +1,32 @@
 medidas = ["bit", "byte", "kilobyte", "megabyte", "gigabyte","terabyte","petabyte"]
 
-def conversor_medidas (numero,unidorigem,unidsaida):
-    indice_Origem = medidas.index(unidorigem)
-    indice_saida = medidas.index(unidsaida)
-    fator = 1024** (indice_saida - indice_Origem)
-    return numero * fator
+valoratual = int(input("Escolha o Valor a ser convertido:"))
 
-valor = int(input("Escolha o Valor a ser convertido:"))
+unid_atual = input("Escolha a unidade de medida:")
 
-unidorigem = input("Escolha a unidade de medida:(Gigabyte):")
+unid_final = input("Escolha a unidade de medida:")
 
-while unidorigem not in medidas :
-    print("Unidade não existente, tente novamente!: ")
-    unid= input()
+while unid_atual not in medidas :
+    print("Unidade não existente, tente novamente!:")
+    unid_atual = input()
 
-unidsaida = input("Escolha a unidade de medida:(Terabyte):")
-while unidsaida not in medidas :
-    print("Unidade não existente, tente novamente!: ")
-    unid= input()
+while unid_final not in medidas :
+    print("Unidade não existente, tente novamente!:")
+    unid_final = input()
 
-while medidas.index(unidorigem) < medidas.index(unidsaida):
-    nova_unidade = medidas[medidas.index(unidorigem) + 1]
-    quantidade = conversor_medidas(quantidade, unidorigem, nova_unidade)
-    unidade_origem = nova_unidade
+def conversao (valoratual, unid_atual, unid_final):
+    valor_final = valoratual
+    if unid_atual == 'bit':
+        valor_final = valor_final/8
+        unid_atual = 'byte'
 
-    print("O resultado é:", quantidade, unidade_origem)
+    if medidas.index(unid_atual)<medidas.index(unid_final):
+        for i in range(medidas.index(unid_atual),medidas.index(unid_final)):
+            valor_final=valor_final/1024    
+
+    else:
+        for i in range (medidas.index(unid_atual), medidas.index(unid_final),-1):
+            valor_final = valor_final *1024
+        if unid_atual == 'bit':
+            valor_final = (valor_final/1024)*8
+    print(valor_final)
